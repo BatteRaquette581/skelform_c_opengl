@@ -1,0 +1,3 @@
+[submodule "lib/skelform_c"]
+	path = lib/skelform_c
+	url = https://github.com/BatteRaquette581/skelform_c.git
