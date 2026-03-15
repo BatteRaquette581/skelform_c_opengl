@@ -181,7 +181,7 @@ void main()                                         \
 
 /**
  * @defgroup skf_opengl_functions Runtime Functions
- * @brief All public skelform_opengl_c functions.
+ * @brief All public skelform_c_opengl functions.
  * @{
  */
 
