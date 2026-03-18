@@ -80,7 +80,7 @@ int main()
     skf_bool reverse = skf_false;
     skf_bool wireframe = skf_false;
     uint64_t start = skf_opengl_get_epoch_ms();
-    glfwSetWindowTitle(window, strcat(strcat(strdup(file1->armature.animations.elements[0].name), " | "),
+    glfwSetWindowTitle(window, strcat(strcat(_strdup(file1->armature.animations.elements[0].name), " | "),
         file2->armature.animations.elements[0].name));
 
     while (!glfwWindowShouldClose(window)) {
@@ -97,7 +97,7 @@ int main()
                 break;
             if (glfwGetKey(window, GLFW_KEY_0 + i) == GLFW_PRESS) {
                 animations2.elements[0] = file2->armature.animations.elements[i];
-                glfwSetWindowTitle(window, strcat(strcat(strdup(file1->armature.animations.elements[i].name), " | "),
+                glfwSetWindowTitle(window, strcat(strcat(_strdup(file1->armature.animations.elements[i].name), " | "),
                     file2->armature.animations.elements[i].name));
             }
         }

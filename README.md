@@ -9,6 +9,11 @@ The runtime must be used on an OpenGL compatibility profile, due to the shaders 
 #include <glad/glad.h> // NOTE TO DEVELOPERS: you can modify this line to other OpenGL headers
 ```
 
+The `skelform_c` submodule must be updated too:
+```shell
+git submodule update --init
+```
+
 ### Running tests
 
 Recommended debug configuration (this code is portable and can be used with other compilers, this is just an example with the GCC toolchain):
