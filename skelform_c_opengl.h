@@ -33,6 +33,12 @@ SOFTWARE.
 #ifndef SKELFORM_C_OPENGL_H
 #define SKELFORM_C_OPENGL_H
 
+#include <stdio.h>
+#ifndef HAVE_FSEEKO
+#define fseeko fseek
+#define ftello ftell
+#endif
+
 #define STB_IMAGE_IMPLEMENTATION
 #include <glad/glad.h> // NOTE TO DEVELOPERS: you can modify this line to other OpenGL headers
 #include <jsmn.h>
